@@ -9,7 +9,7 @@
 # color のパラメーターを追加すると、キャラクターの名前を色付けできます。
 
 define nue = Character('鵺', color="#c8ffc8")
-
+define gaku = Character('学郎', color="#a6ec3c")
 
 # label ステートメント（文）はゲームの処理をまとめてラベル付けします。
 # ラベル間の移動は jump ステートメントか call ステートメントを使います。
@@ -50,6 +50,10 @@ label start:
 
     nue "最近色々流行ってるし仕方ないのかなぁ"
 
+    show gakuro at center
+    with dissolve
+
+    gaku "..."
     # return でゲームを終了します。
 
     return
